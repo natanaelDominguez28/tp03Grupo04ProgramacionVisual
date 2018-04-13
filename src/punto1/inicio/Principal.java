@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package punto1.inicio;
 
-import dominio.Punto;
+import punto1.dominio.Punto;
 
 /**
  *
