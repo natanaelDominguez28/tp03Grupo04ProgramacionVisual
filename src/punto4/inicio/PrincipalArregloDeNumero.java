@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package punto4.inicio;
 
 import dominio.ArregloDeNumero;
 import java.util.Scanner;

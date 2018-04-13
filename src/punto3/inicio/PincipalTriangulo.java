@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package punto3.inicio;
 
-import dominio.Triangulo;
+import punto3.dominio.Triangulo;
 import java.util.Scanner;
 
 /**
