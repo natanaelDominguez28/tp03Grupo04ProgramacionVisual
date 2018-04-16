@@ -19,22 +19,23 @@ public class PrincipalAuto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      //  Auto auto = new Auto();
+       Auto auto = new Auto();
         Scanner scanner=new Scanner(System.in);
-        Auto toyota = new Auto("jdsh", "toyota", "mediano", "verde", "gas");
+        
+        Auto toyota = new Auto("j3467", "toyota", "mediano", "verde", "gas");
         Auto fitito = new Auto("kehs", "fitito", "grannde", "rojo", "nafta");
         Auto chebrolet = new Auto("ehwd", "chebrolet", "mediano", "blanco", "nafta");
 
         ArregloDeAuto arregloDeAutos = new ArregloDeAuto(3);
         arregloDeAutos.agregarAuto(toyota, 0);
-        arregloDeAutos.agregarAuto(toyota, 1);
+        arregloDeAutos.agregarAuto(fitito, 1);
         arregloDeAutos.agregarAuto(chebrolet, 2);
 
         arregloDeAutos.mostrarArreglo();
         System.out.println("Elija una posicin amodifica: ");
         int  posicion=scanner.nextInt();
         arregloDeAutos.modificarAuto(posicion);
-
+         arregloDeAutos.mostrarArreglo();
+        
     }
-
 }
