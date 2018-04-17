@@ -3,10 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Punto8.util;
+package dominio;
 
-import Punto8.dominio.ArregloDeAuto;
-import Punto8.dominio.Auto;
 import java.util.Scanner;
 
 /**
@@ -19,7 +17,7 @@ public class PrincipalAuto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Auto auto = new Auto();
+        Auto auto = new Auto();
         Scanner scanner=new Scanner(System.in);
         
         Auto toyota = new Auto("j3467", "toyota", "mediano", "verde", "gas");
@@ -37,5 +35,7 @@ public class PrincipalAuto {
         arregloDeAutos.modificarAuto(posicion);
          arregloDeAutos.mostrarArreglo();
         
+
     }
+
 }

@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Punto8.dominio;
+package dominio;
 
+import dominio.Auto;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-
-
 
 /**
  *
  * @author SONY
  */
 public class ArregloDeAuto {
+
     private Auto[] arregloDeAutos;
     private Auto auto;
     

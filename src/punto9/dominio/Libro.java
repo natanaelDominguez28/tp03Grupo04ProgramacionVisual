@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Punto7.dominio;
+package punto9.dominio;
 
 /**
  *
  * @author SONY
  */
 public class Libro {
-       private String isbn;
+     private String isbn;
     private String titulo;
     private double precio;
     private String autor;
@@ -90,3 +90,4 @@ public class Libro {
     }
 
 }
+
