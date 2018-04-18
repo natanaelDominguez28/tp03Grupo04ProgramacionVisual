@@ -10,7 +10,7 @@ package punto9.dominio;
  * @author SONY
  */
 public class Libro {
-     private String isbn;
+    private String isbn;
     private String titulo;
     private double precio;
     private String autor;

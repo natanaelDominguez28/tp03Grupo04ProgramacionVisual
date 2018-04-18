@@ -3,11 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dominio;
+package punto7.dominio;
 
-import dominio.Auto;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -51,12 +48,7 @@ public class ArregloDeAuto {
         }
     }
 
-    /*
-public void modificar(Auto unAuto){
-            System.out.println("Patente: "+ unAuto.getPatente() + " Marca: " + unAuto.getMarca() + "Modelo: " + unAuto.getMmodelo() + "Color: "
-                +unAuto.getColor() + "Tipo de Combustible: " + unAuto.getTipoDeCombustible());
-}*/
-    
+  
     public void agregarAuto(Auto auto, int posicion) {
         getArregloDeAutos()[posicion] = auto;
     }
