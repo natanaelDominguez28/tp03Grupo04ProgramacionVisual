@@ -12,7 +12,7 @@ package punto10.utilidad;
 public class GestorCuota {
     private double[] registroCuotas;
     private double interes=1.5;
-    private double importe;
+    //private double importe;
     
     public GestorCuota(int nroCuota){
       registroCuotas=new double[nroCuota];  
@@ -48,9 +48,12 @@ public class GestorCuota {
     }
     
     public void mostrarCuotas(){
+        double total=0;
         System.out.println("Las cuotas a pagar son");
         for(int i=0;i<registroCuotas.length;i++){
             System.out.println(registroCuotas[i]);
+            total=total+registroCuotas[i];   
         }
+        System.out.println("total a pagar"+total);
     }
 }
