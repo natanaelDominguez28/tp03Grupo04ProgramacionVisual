@@ -25,7 +25,7 @@ public class PrincipalZapatilla {
             int talle=lectura.nextInt();
             System.out.println("ingrese marca");
             String marca=lectura.nextLine();
-            System.out.println("ingrese calidad");
+            System.out.println("ingrese calidad (original/copia)");
             String calidad=lectura.nextLine();
             System.out.println("ingrese precio");
             double precio=lectura.nextDouble();
@@ -35,7 +35,7 @@ public class PrincipalZapatilla {
             
             System.out.println("desea ingresar mas zapatillas (s/n) ");
             resp=lectura.next().charAt(0);
-        }while(resp=='n'||resp=='N');
+        }while(resp=='s'||resp=='S');
         
         lista.mostrarZapatilla();
     }      

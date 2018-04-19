@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package punto5.dominio;
+package punto5.utilidad;
 
 import java.util.ArrayList;
+import punto5.dominio.Circulo;
 //import punto5.dominio.Circulo;
 
 /**

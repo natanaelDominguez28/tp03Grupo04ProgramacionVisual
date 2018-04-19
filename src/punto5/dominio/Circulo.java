@@ -33,6 +33,6 @@ public class Circulo {
         this.radio = radio;
     }
     public double calcularSuperficie(){
-        return Math.pow(radio, 2);
+        return Math.pow(radio, 2)*Math.PI;
     }
 }

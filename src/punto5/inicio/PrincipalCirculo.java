@@ -6,7 +6,7 @@
 package punto5.inicio;
 
 import punto5.dominio.Circulo;
-import punto5.dominio.ListaDeCirculo;
+import punto5.utilidad.ListaDeCirculo;
 
 /**
  *
