@@ -15,23 +15,14 @@ import java.util.Scanner;
  */
 public class GestorLibro {
 
+  
     private List<Libro> listaLibros;//la lista de los libros 
     private Libro libro;
-
+   
     public GestorLibro() {
         listaLibros = new ArrayList<>();
         libro = new Libro();
-    }
-
-    public GestorLibro(List<Libro> listaLibros, Libro libro) {
-        this.listaLibros = listaLibros;
-        this.libro = libro;
-    }
-
-    public void mostrarLibros() {
-        for (Libro a : listaLibros) {
-            a.mostrarDatos();
-        }
+      //  librosBuscado = new ArrayList<>();
     }
 
     //metodo para agregar el libro precargado a la lista de libros
@@ -48,37 +39,46 @@ public class GestorLibro {
         do {
             System.out.println("Ingrese un isbn: ");
             String nuevoIsbn = scanner.next();
-           getLibro().setisbn(nuevoIsbn);// agregarLibros(nuevoIsbn);
+            getLibro().setisbn(nuevoIsbn);// agregarLibros(nuevoIsbn);
             System.out.println("Ingrese titulo: ");
             String nuevoTitulo = scanner.next();
-             getLibro().setTitulo(nuevoTitulo);
+            getLibro().setTitulo(nuevoTitulo);
             System.out.println("Ingrese precio: ");
             double nuevoPrecio = scanner.nextDouble();
-             getLibro().setPrecio(nuevoPrecio);
+            getLibro().setPrecio(nuevoPrecio);
             System.out.println("Ingrese autor: ");
             String nuevoAutor = scanner.next();
-             getLibro().setAutor(nuevoAutor);
+            getLibro().setAutor(nuevoAutor);
             // agregarLibros(nuevoIsbn);
             agregarLibros(getLibro());
             setLibro(null);
-                     System.out.println("Desea ingresar unnuevo libro: ");
+            System.out.println("Desea ingresar unnuevo libro: ");
             res = scanner.next();
         } while (res.equals("S"));
     }
 
-    /*   public void addUnLibro(Libro unLibroIng) {
-        listaLibros.add(unLibroIng);
-    }*/
-    /**
-     * @return the listaLibros
-     */
+    public void mostrarLibros() {
+        for (Libro aLibro : listaLibros) {
+            aLibro.mostrarDatos();
+        }
+    }
+
+   
+
+    public void buscarV(String buscado) {
+        for (Libro libro : listaLibros) {
+            if (libro.getTitulo().equals(buscado)) {
+               // System.out.println(listaLibros.get(i).getTitulo() + buscado);
+                // this.librosBuscado.add(unLibro);
+               libro.mostrarDatos();
+            }
+        }    
+    }
+
     public List<Libro> getListaLibros() {
         return listaLibros;
     }
 
-    /**
-     * @param listaLibros the listaLibros to set
-     */
     public void setListaLibros(List<Libro> listaLibros) {
         this.listaLibros = listaLibros;
     }
@@ -96,5 +96,5 @@ public class GestorLibro {
     public void setLibro(Libro libro) {
         this.libro = libro;
     }
-}
 
+}

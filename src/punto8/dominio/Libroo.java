@@ -5,24 +5,26 @@
  */
 package punto8.dominio;
 
+
+
 /**
  *
  * @author SONY
  */
-public class Libro {
-    private String isbn;
+public class Libroo {
+     private String isbn;
     private String titulo;
     private double precio;
     private String autor;
 
-    public Libro(String isbn, String titulo, double precio, String autor) {
+    public Libroo(String isbn, String titulo, double precio, String autor) {
         this.isbn= isbn;
         this.titulo = titulo;
         this.precio = precio;
         this.autor = autor;
     }
 
-    public Libro() {
+    public Libroo() {
     }
     
     //metodo que me permite mostrar los libros
@@ -90,3 +92,4 @@ public class Libro {
     }
 
 }
+

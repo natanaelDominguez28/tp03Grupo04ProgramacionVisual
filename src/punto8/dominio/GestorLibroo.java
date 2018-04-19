@@ -9,35 +9,35 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 /**
  *
  * @author SONY
  */
-public class GestorLibro {
+public class GestorLibroo {
 
-  
-    private List<Libro> listaLibros;//la lista de los libros 
-    private Libro libro;
+    private List<Libroo> listaLibros;//la lista de los libros 
+    private Libroo libro;
 
-    public GestorLibro() {
+    public GestorLibroo() {
         listaLibros = new ArrayList<>();
-        libro = new Libro();
+        libro = new Libroo();
     }
 
-    public GestorLibro(List<Libro> listaLibros, Libro libro) {
+    public GestorLibroo(List<Libroo> listaLibros, Libroo libro) {
         this.listaLibros = listaLibros;
         this.libro = libro;
     }
 
+   
+   
     public void mostrarLibros() {
-        for (Libro a : listaLibros) {
+        for (Libroo a : listaLibros) {
             a.mostrarDatos();
         }
     }
 
     //metodo para agregar el libro precargado a la lista de libros
-    public void agregarLibros(Libro esteLibro) {
+    public void agregarLibros(Libroo esteLibro) {
         getListaLibros().add(esteLibro);
     }
 
@@ -74,28 +74,29 @@ public class GestorLibro {
     /**
      * @return the listaLibros
      */
-    public List<Libro> getListaLibros() {
+    public List<Libroo> getListaLibros() {
         return listaLibros;
     }
 
     /**
      * @param listaLibros the listaLibros to set
      */
-    public void setListaLibros(List<Libro> listaLibros) {
+    public void setListaLibros(List<Libroo> listaLibros) {
         this.listaLibros = listaLibros;
     }
 
     /**
      * @return the libro
      */
-    public Libro getLibro() {
+    public Libroo getLibro() {
         return libro;
     }
 
     /**
      * @param libro the libro to set
      */
-    public void setLibro(Libro libro) {
+    public void setLibro(Libroo libro) {
         this.libro = libro;
     }
 }
+

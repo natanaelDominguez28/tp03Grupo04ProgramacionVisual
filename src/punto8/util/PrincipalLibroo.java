@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package punto9.util;
+package punto8.util;
 
 import java.util.Scanner;
-import punto9.dominio.GestorLibro;
-import punto9.dominio.Libro;
+import punto8.dominio.GestorLibroo;
+import punto8.dominio.Libroo;
+
 
 
 /**
  *
  * @author SONY
  */
-public class PrincipalLibro {
+public class PrincipalLibroo {
 
     /**
      * @param args the command line arguments
@@ -22,12 +23,12 @@ public class PrincipalLibro {
     public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
 
-        Libro unLibro = new Libro("TT1", "princesa", 165.10, "Vanesa");
-        Libro unLibro1 = new Libro("TT2", "Princesa ", 123.10, "mary");
-        Libro unLibro2 = new Libro("TT3", "Algebra I", 125.00, "clau");
-        Libro unLibro3 = new Libro("TT4", "Algebra II ", 165.10, "leila");
+        Libroo unLibro = new Libroo("TT1", "princesa", 165.10, "Vanesa");
+        Libroo unLibro1 = new Libroo("TT2", "Princesa ", 123.10, "mary");
+        Libroo unLibro2 = new Libroo("TT3", "Algebra I", 125.00, "clau");
+        Libroo unLibro3 = new Libroo("TT4", "Algebra II ", 165.10, "leila");
 
-        GestorLibro gestorLibro = new GestorLibro();
+       GestorLibroo gestorLibro = new GestorLibroo();
         System.out.println("--Lista de Autos--");
         gestorLibro.agregarLibros(unLibro);
         gestorLibro.agregarLibros(unLibro1);
